@@ -2,23 +2,39 @@
   "publisher": "onderakbulut",
   "name": "svg-liquid",
   "displayName": "Svg Liquid",
-  "description": "",
+  "description": "Preview Liquid-based SVG files",
   "version": "0.0.1",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.91.0"
   },
-  "categories": [
-    "Other"
+  "tags": [
+    "liquid",
+    "svg",
+    "shopify"
   ],
-  "activationEvents": ["*"],
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "repository": {
+    "url": "git@github.com:onderakbulut/svg-liquid.git"
+  },
+  "author": {
+    "name": "Önder Akbulut",
+    "url": "https://onderakbulut.com"
+  },
+  "activationEvents": [
+    "*"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
-    { 
-      "command": "svg-liquid.showIcon",
-      "title": "Show Icon"
-    }
-  ]
+      {
+        "command": "svg-liquid.showIcon",
+        "title": "Show Icon"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
